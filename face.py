@@ -30,7 +30,8 @@ for img in images:
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     encoded_face = face_recognition.face_encodings(img,num_jitters=100,model='small')[0]
     trainencoding_lst.append(encoded_face)
-    
+
+# change the url
 url = "https://192.168.0.108:8080/video"
 cap = cv2.VideoCapture(0)
 
